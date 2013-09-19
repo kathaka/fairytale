@@ -1,4 +1,5 @@
 Fairytale::Application.routes.draw do
+  root :to => redirect('/stories')
   resources :stories do
     member do
       post 'append_to'
