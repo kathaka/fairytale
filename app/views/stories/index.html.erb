@@ -1,0 +1,14 @@
+<h1>Wir schreiben Geschichten.</h1>
+
+<ol>
+<% @stories.each do |story| %>
+  <li>
+    <%= story.content %>
+    <%= link_to 'Geschichte schreiben', story %>
+  </li>
+<% end %>
+</ol>
+
+<br />
+
+<%= link_to 'Neue Geschichte beginnen', new_story_path %>
