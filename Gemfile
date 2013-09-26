@@ -46,3 +46,6 @@ gem 'jquery-rails'
 group :development do
 	gem "pry-rails"
 end
+
+gem 'therubyracer' #JavaScript
+gem 'thin' #Instead of webrick
