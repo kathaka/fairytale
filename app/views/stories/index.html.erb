@@ -1,4 +1,3 @@
-<h1>Wir schreiben Geschichten.</h1>
 
 <ol>
 <% @stories.each do |story| %>
@@ -11,4 +10,4 @@
 
 <br />
 
-<%= link_to 'Neue Geschichte beginnen', new_story_path %>
+<%= link_to 'Neue Geschichte beginnen', new_story_path, class: "start-new-story" %>

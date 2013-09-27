@@ -1,3 +1,27 @@
-// Place all the styles related to the stories controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.start-new-story {
+	background-color: #3DBBDA;
+	color: white;
+	text-decoration: none;
+	border-radius: 8px;
+	padding: .5em 1.5em;
+	font-family: Verdana;
+
+	&:hover {
+		background-color: #30a7c4;
+		
+	}
+
+}
+
+textarea {
+	width: 90%;
+	border-radius: 8px;
+	height: 70px;
+	font-family: "Helvetica Neue";
+	font-size: 1em;
+	font-weight: 300;
+	padding: 5px;
+
+
+}
