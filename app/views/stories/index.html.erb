@@ -3,11 +3,11 @@
 <% @stories.each do |story| %>
   <li>
     <%= story.content %>
-    <%= link_to 'Geschichte schreiben', story %>
+    <%= link_to 'Continue Story', story %>
   </li>
 <% end %>
 </ol>
 
 <br />
 
-<%= link_to 'Neue Geschichte beginnen', new_story_path, class: "start-new-story" %>
+<%= link_to 'Add New Story', new_story_path, class: "start-new-story" %>
