@@ -7,10 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<header class= "logo">
-		We <br>
+  <header class= "logo">
+		<%=link_to 'We <br>
 		write <br>
-		stories.
+		stories.'.html_safe, stories_path%>
 	</header>
 
 <%= yield %>
