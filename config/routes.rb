@@ -3,6 +3,7 @@ Fairytale::Application.routes.draw do
   resources :stories do
     member do
       post 'append_to'
+      post 'archive'
     end
   end
 

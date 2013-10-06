@@ -1,6 +1,13 @@
-<h1>Editing story</h1>
+<h2>
+Wanna continue this story? GREAT! Here's how it all began...
+</h2>
+<p id="notice"><%= notice %></p>
 
-<%= render 'form' %>
+<p>
+  <%= @story.content %>
+</p>
+<%= render 'append_to_form' %>
 
-<%= link_to 'Show', @story %> |
-<%= link_to 'Back', stories_path %>
+<%= link_to 'Edit', edit_story_path(@story) %> |
+<%= link_to 'Back', stories_path %> |
+<%= button_to 'Close Story and add to archive', archive_story_path(@story) %>

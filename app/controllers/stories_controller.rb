@@ -2,7 +2,8 @@ class StoriesController < ApplicationController
   # GET /stories
   # GET /stories.json
   def index
-    @stories = Story.all
+    @stories = Story.where archive: false
+    @archived_stories = Story.where archive: true
 
     respond_to do |format|
       format.html # index.html.erb
@@ -94,5 +95,21 @@ class StoriesController < ApplicationController
         format.json { render json: @story.errors, status: :unprocessable_entity }
       end
     end
+  end
+
+  def archive
+    @story = Story.find(params[:id])
+    @story.archive = true
+
+    respond_to do |format|
+      if @story.save!
+        format.html { redirect_to @story, notice: 'Story was successfully added to the archive.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: "edit" }
+        format.json { render json: @story.errors, status: :unprocessable_entity }
+      end
+    end
+
   end
 end
