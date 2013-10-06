@@ -100,16 +100,19 @@ class StoriesController < ApplicationController
   def archive
     @story = Story.find(params[:id])
     @story.archive = true
-
+    @story.title = params[:title]
+    
     respond_to do |format|
-      if @story.save!
+      if @story.save
         format.html { redirect_to @story, notice: 'Story was successfully added to the archive.' }
         format.json { head :no_content }
       else
-        format.html { render action: "edit" }
+        format.html { render action: "close" }
         format.json { render json: @story.errors, status: :unprocessable_entity }
       end
     end
-
+  end
+  def close
+    @story = Story.find(params[:id])
   end
 end

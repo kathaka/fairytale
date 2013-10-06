@@ -4,6 +4,7 @@ Fairytale::Application.routes.draw do
     member do
       post 'append_to'
       post 'archive'
+      get 'close'
     end
   end
 

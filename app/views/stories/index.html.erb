@@ -16,7 +16,7 @@
 <ol>
 <% @archived_stories.each do |story| %>
 	<li>
-	<%= truncate(story.content, length: 100, separator: ' ') %>
+	<%= story.title %>
 	<%= link_to 'Read Full Story', story %>
 	</li>
 <% end %>
