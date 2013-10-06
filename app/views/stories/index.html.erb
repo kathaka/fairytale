@@ -1,3 +1,5 @@
+<%= link_to 'Add New Story', new_story_path, class: "start-new-story" %>
+
 <h2>Active Stories</h2>
 <ol>
 <% @stories.each do |story| %>
@@ -10,7 +12,6 @@
 
 <br />
 
-<%= link_to 'Add New Story', new_story_path, class: "start-new-story" %>
 
 <h2>Archived Stories</h2>
 <ol>
