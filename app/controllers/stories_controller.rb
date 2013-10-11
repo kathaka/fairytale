@@ -84,7 +84,7 @@ class StoriesController < ApplicationController
 
   def append_to
     @story = Story.find(params[:id])
-    @story.content = @story.content + " " + params[:content]
+    @story.content = "#{@story.content} #{params[:content]}"
     
     respond_to do |format|
       if @story.save!
