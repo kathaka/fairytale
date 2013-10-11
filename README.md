@@ -1,7 +1,6 @@
-## fairytale - We write stories.
+# fairytale - We write stories.
 
 This is a little project I started right after attending Rails Girls The Hague. It's about writing stories together and having fun with it. I'm still learning and looking forward to your feedback, questions and comments. :)
-
 
 ## Contributing
 
