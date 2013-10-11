@@ -130,7 +130,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
-  jquery-rails
+  jquery-rails (~> 3.0.4)
   pg
   pry-rails
   rails (= 3.2.12)
