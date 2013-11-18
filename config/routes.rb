@@ -7,6 +7,10 @@ Fairytale::Application.routes.draw do
       get 'close'
     end
   end
+  
+  resources :posts do
+    resources :comments
+  end
 
 
   # The priority is based upon order of creation:
